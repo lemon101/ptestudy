@@ -21,9 +21,11 @@
 				height: 20px;
 				width: 20px;
 			}
-			.is-active:hover img{
-				filter: drop-shadow(#072249 20px 0);
-				transform: translateX(-20px);
+			.el-menu-item:hover img,.el-menu-item:active img, .is-active img{
+				filter: drop-shadow(#2A7A95 0px 0);
+				transform: translateX(0);
+			}
+			.iconfont{
 			}
 		</style>
 	</head>
@@ -67,10 +69,10 @@
 			<section class="el-container">
 				<aside class="el-aside" style="width: 240px;"  id="menu">
 					<ul class="el-menu">
-						<li class="el-menu-item"><i class="iconfont"></i><span>首页</span></li>
-						<li class="el-menu-item  is-active"><i class="iconfont  "><img class="active"  src="../img/home/speak.svg" alt=""></i> <span>单项练习</span></li>
+						<li class="el-menu-item  is-active"><i class="iconfont  "><img class="active"  src="../img/home/svg/home.svg" alt=""></i><span>首页</span></li>
+						<li class="el-menu-item "><i class="iconfont  "><img class="active"  src="../img/home/svg/danxiang.svg" alt=""></i> <span>单项练习</span></li>
 						<li aria-haspopup="true" class="el-submenu">
-							<div class="el-submenu__title"><i class="iconfont" style="font-size: 20px; margin-right: 4px;"></i> 每周预测 <img src="https://upload.fireflyau.com/web_gwpte/pte/pte-home/gp.png" alt=""><i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div>
+							<div class="el-submenu__title"><i class="iconfont"> <img class="active" src="../img/home/svg/week.svg"></i> 每周预测<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div>
 							<ul role="menu" class="el-menu el-menu--inline">
 								<li class="el-menu-item"><span>口语</span></li>
 								<li class="el-menu-item"><span>写作</span></li>
@@ -78,8 +80,8 @@
 								<li class="el-menu-item"><span>听力</span></li>
 							</ul>
 						</li>
-						<li class="el-menu-item "><i class="iconfont" ></i><span>真题单词 </span></li>
-						<li class="el-menu-item"><i class="iconfont" ><img  src="../img/home/mokao.png" alt=""></i><span>整套模考 </span></li>
+						<li class="el-menu-item "><i class="iconfont  "><img class="active"  src="../img/home/svg/zhenti.svg" alt=""></i><span>真题单词 </span></li>
+						<li class="el-menu-item"><i class="iconfont" ><img class="active"  src="../img/home/svg/zhengtao.svg" alt=""></i><span>整套模考 </span></li>
 
 						<li class="el-menu-item"><i class="iconfont" style="font-size: 19px; margin-left: 0.4px;"></i><span>打分查看</span></li>
 						<li class="el-menu-item"><i class="iconfont" style="font-size: 18px; margin-left: 1px;"></i><span>我的作业包</span></li>
