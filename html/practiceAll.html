@@ -3,31 +3,18 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../static/css/app.css">
 		<link rel="stylesheet" type="text/css" href="../css/el-icon.css" />
-		<!--<link rel="stylesheet" type="text/css" href="../css/home.css">-->
 		<!--引入 element-ui 的样式-->
 		<link rel="stylesheet" type="text/css" href="../static/css/element.css">
+		<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>-->
+		<link rel="stylesheet" type="text/less" href="../css/practice-all.less">
 		<title>达澳学院PTE Study 官方练习平台</title>
-		<style>
-			/* 悬浮改变颜色 */
-			.active{
-				height: 20px;
-				width: 20px;
-				margin: 0 auto;
-				overflow: hidden;
-			}
-			.active img{
-				height: 20px;
-				width: 20px;
-			}
-			.el-menu-item:hover img,.el-menu-item:active img, .is-active img{
-				filter: drop-shadow(#2A7A95 0px 0);
-				transform: translateX(0);
-			}
-			.iconfont{
-			}
-		</style>
+		<script> 
+		    !function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);
+		    flex(100, 1);
+		</script>
 	</head>
 
 	<body id="page">
@@ -95,251 +82,204 @@
 					</ul>
 				</aside>
 				<main class="el-main">
-						<!--单项练习-->
-						<div class="box-practice">
-							<div  class="practice-contain">
-								<div class="practice-ul">
-									<div class="practice-img">
-										<img src="../img/home/speaking.png">
+						<div class="practice-all-container">
+						<!--单项练习-口语-->
+							<div class="practice-all-block">
+								<div class="practice-all-top bg-speaking">
+									<div class="practice-all-header">
+										<div class="practice-all-img"><img src='../img/home/speaking.png' /> </div>
+										<div class="practice-all-name">口语专区</div>
 									</div>
-									<ul >
-										<li >
-											<span class="practice-title">口语</span>
-											<span class="practice-content">已完成90题，共500题</span>
-											<div class="practice-foot">
-												<span  class="title-btn-text">查看备考指南...</span>
-												<div  class="title-btn">
-													<a  href="#" class=""> 继续练题 <i  class="el-icon-right"></i></a>
-												</div>
+									<div class="practice-all-date">最近更新：2022-09-16</div>
+								</div>
+								<div class="practice-all-list">
+									<ul>
+										<li>
+											<div class="practice-all-li-left">Read aloud[399]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
 											</div>
 										</li>
-									</ul>
-								</div>
-								<div class="practice-ul">
-									<div class="practice-img">
-										<img src="../img/home/reading.png">
-									</div>
-									<ul >	
-										<li >
-											<span class="practice-title">阅读</span>
-											<span class="practice-content">已完成90题，共500题</span>
-											<div class="practice-foot">
-												<span  class="title-btn-text">查看备考指南</span>
-												<div  class="title-btn">
-													<a  href="#" class=""> 开始练习 <i  class="iconfont"></i></a>
-												</div>
+										<li>
+											<div class="practice-all-li-left">Repeat Sentence[1491]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
 											</div>
 										</li>
-									</ul>
-								</div>
-								<div class="practice-ul">
-									<div class="practice-img">
-										<img src="../img/home/writing.png">
-									</div>
-									<ul >
-										<li >
-											<span class="practice-title">写作</span>
-											<span class="practice-content">已完成90题，共500题</span>
-											<div class="practice-foot">
-												<span  class="title-btn-text">查看备考指南</span>
-												<div  class="title-btn">
-													<a  href="#" class=""> 开始练习 <i  class="iconfont"></i></a>
-												</div>
+										<li>
+											<div class="practice-all-li-left">Describe Image[622]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
 											</div>
 										</li>
-									</ul>
-								</div>
-								<div class="practice-ul">
-									<div class="practice-img">
-										<img src="../img/home/listen.png">
-									</div>
-									<ul >
-										<li >
-											<span class="practice-title">听力</span>
-											<span class="practice-content">已完成90题，共500题</span>
-											<div class="practice-foot">
-												<span  class="title-btn-text">查看备考指南</span>
-												<div  class="title-btn">
-													<a  href="#" class=""> 开始练习 <i  class="iconfont"></i></a>
-												</div>
+										<li>
+											<div class="practice-all-li-left">Re-tell Lecture[327]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Answer Short Question[115]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
 											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
-						</div>
-						<!--经验分享-->
-						<div class="box-experience">
-							<div class="box-experience-title">近日 练习统计</div>
-							<div class="box-experience-block">
-								
-								<div class="box-experience-container">
-									<div class="box-experience-text">
-										<span class="text-left">考友 正在练习的题目</span>
-										<span class="text-right">最近一小时</span>
+							<!--单项练习 -写作-->
+							<div class="practice-all-block">
+								<div class="practice-all-top bg-writing" >
+									<div class="practice-all-header ">
+										<div class="practice-all-img"><img src='../img/home/writing.png' /> </div>
+										<div class="practice-all-name">写作专区</div>
 									</div>
-									<div class="box-experience-list">
-										<ul>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-										</ul>
-									</div>
+									<div class="practice-all-date">最近更新：2022-09-16</div>
 								</div>
-								<div class="box-experience-container">
-									<div class="box-experience-text">
-										<span class="text-left">考友 正在练习的题目</span>
-										<span class="text-right">最近一小时</span>
-									</div>
-									<div class="box-experience-list">
-										<ul>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/UniaxFelbP12gPdtgahmxzWVl0cKTwqW5qUibz6KJeynQOcHJG2W73Jam9PUVia8fgWAUHdccQ2FhqCqvLY3hLAbg/132"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="box-experience-container">
-									<div class="box-experience-text">
-										<span class="text-left">考友 正在练习的题目</span>
-										<span class="text-right">最近一小时</span>
-									</div>
-									<div class="box-experience-list">
-										<ul>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-											<li>
-												<div class="box-experience-head"><img src="../img/home/reading.png"/></div>
-												<div class="experience-center">
-													<span class="experience-text">JAY 刚刚完成</span>
-													<p class="experience-detail">Tissuing Engineering组织工程学...</p>
-												</div>
-												<div class="box-experience-right"><i class="el-icon-arrow-right"></i></div>
-											</li>
-										</ul>
-									</div>
+								<div class="practice-all-list">
+									<ul>
+										<li>
+											<div class="practice-all-li-left">Read aloud[399]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Repeat Sentence[1491]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Describe Image[622]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Re-tell Lecture[327]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Answer Short Question[115]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</div>
+							<!--单项练习-阅读-->
+							<div class="practice-all-block">
+								<div class="practice-all-top bg-reading" >
+									<div class="practice-all-header ">
+										<div class="practice-all-img"><img src='../img/home/reading.png' /> </div>
+										<div class="practice-all-name">阅读专区</div>
+									</div>
+									<div class="practice-all-date">最近更新：2022-09-16</div>
+								</div>
+								<div class="practice-all-list">
+									<ul>
+										<li>
+											<div class="practice-all-li-left">Read aloud[399]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Repeat Sentence[1491]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Describe Image[622]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Re-tell Lecture[327]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Answer Short Question[115]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--单项练习-听力-->
+							<div class="practice-all-block">
+								<div class="practice-all-top bg-listening" >
+									<div class="practice-all-header ">
+										<div class="practice-all-img"><img src='../img/home/listen.png' /> </div>
+										<div class="practice-all-name">听力专区</div>
+									</div>
+									<div class="practice-all-date">最近更新：2022-09-16</div>
+								</div>
+								<div class="practice-all-list">
+									<ul>
+										<li>
+											<div class="practice-all-li-left">Read aloud[399]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Repeat Sentence[1491]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Describe Image[622]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Re-tell Lecture[327]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+										<li>
+											<div class="practice-all-li-left">Answer Short Question[115]</div>
+											<div class="practice-all-li-right">
+												<span class="practice-all-tag">AI</span>
+												<i class="el-icon-right"></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</main>

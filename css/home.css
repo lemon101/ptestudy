@@ -8,8 +8,26 @@ body{
 	
 	
 }
+/* 悬浮改变颜色 */
+.active{
+	height: 20px;
+	width: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.active img{
+	height: 20px;
+	width: 20px;
+}
+.el-menu-item:hover img,.el-menu-item:active img, .is-active img{
+	filter: drop-shadow(#2A7A95 0px 0);
+	transform: translateX(0);
+}
 .font26{
-	font-size: 26px;;
+	font-size: 26px;
+}
+.bg-speaking{
+	background: url(../img/practice/speaking.png) #fff 100%;
 }
 /*顶部样式*/
 .el-container {
@@ -292,7 +310,8 @@ body{
 	display: flex;
 	height: 337px;
 	border-radius: 20px;
-	background: url(../img/home/bg-yuce.png) 100% 100% #fff;
+	background: url(../img/home/bg-yuce.png) no-repeat#fff;
+	background-size:  100% 100% ;
 	border-radius: 10px;
 	margin-left: 20px;
 	width: 40%;

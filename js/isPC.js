@@ -16,6 +16,16 @@ function browserRedirect() {
                 linkNode.setAttribute("type","text/css");
                 linkNode.setAttribute("href","../css/home.css");
                 document.head.appendChild(linkNode);
+                
+                 //加载js
+                var scriptNode = document.createElement("script");
+                scriptNode.setAttribute("type", "text/javascript");
+                scriptNode.setAttribute("src", "../js/fontflex.js");
+                document.head.appendChild(scriptNode);
+                var scriptNode = document.createElement("script");
+                scriptNode.setAttribute("type", "text/javascript");
+                scriptNode.setAttribute("src", "http://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js");
+                document.head.appendChild(scriptNode);
                   console.log("+++++++pc+++++++")
         }else{
                 //手机端
