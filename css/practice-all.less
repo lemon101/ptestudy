@@ -1,0 +1,128 @@
+body {}
+
+#page {
+    .practice-all-container {
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+        flex-grow: 1;
+        width: 100%;
+        .practice-all-block {
+            display: flex;
+            flex-direction: column;
+            border-radius: .08rem;
+            width: 24%;
+            margin-right: .28rem;
+            .practice-all-top {
+                display: flex;
+                flex-direction: column;
+                max-width: 7.4rem;
+                height: 2.5rem;
+                background: #fff;
+               
+                width: 100%;
+                overflow: hidden;
+                padding-top: .64rem;
+                padding-left: .4rem;
+                .practice-all-header {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 100%;
+                    .practice-all-img {
+                        width: .68rem;
+                        height: .68rem;
+                        display: flex;
+                        align-items: center;
+                        margin-right: .26rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .practice-all-name {
+                        font-size: .36rem;
+                        color: #005DE9;
+                        font-weight: bold;
+                        height: .68rem;
+                        display: flex;
+                        align-items: center;
+                        vertical-align: center;
+                    }
+                }
+                .practice-all-date {
+                    font-size: .26rem;
+                    color: #B9B9B9;
+                    padding-bottom: .34rem;
+                }
+            }
+            .bg-writing {
+                background: url('../img/practice/writing.png') no-repeat;
+                background-size: 100% 100%;
+            }
+            .bg-speaking {
+                background: url('../img/practice/speaking.png') no-repeat;
+                 background-size: 100% 100%;
+            }
+            .bg-reading {
+                background: url('../img/practice/reading.png') no-repeat;
+                 background-size: 100% 100%;
+            }
+            .bg-listening {
+                background: url('../img/practice/listening.png') no-repeat;
+                 background-size: 100% 100%;
+            }
+            .practice-all-list {
+                max-width: 7.4rem;
+                height: 14rem;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    background: #fff;
+                    li {
+                        border: .02rem solid #DFDFDF;
+                        height: .76rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-left: .2rem;
+                        padding-right: .2rem;
+                        margin: .2rem .34rem;
+                        
+                        .practice-all-li-left {
+                            font-size: .32rem;
+                            color: #707070;
+                            flex-shrink: 0;
+                            max-width: 3rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .practice-all-li-right {
+                            display: flex;
+                            align-items: center;
+                            span {
+                                background: #2BA1C9;
+                                border-radius: .18rem;
+                                height: 0.4rem;
+                                padding: 0 0.24rem;
+                                text-align: center;
+                                color: #fff;
+                                line-height: .4rem;
+                                font-size: .24rem;
+                            }
+                            i {
+                                color: #2BA1C9;
+                                font-size: .34rem;
+                            }
+                        }
+                    }
+                    li:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

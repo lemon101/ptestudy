@@ -1,0 +1,179 @@
+body{
+    .read-aloud{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .read-aloud-title{
+            display: flex;
+            flex-direction: row;
+            height: 1.6rem;
+            background: #fff;
+            
+            align-items: center;
+            .read-aloud-img{
+                width: .68rem;
+                height: .68rem;
+                margin-left: .66rem;
+                margin-right: .26rem;
+                img{
+                    width:100%;
+                    height: 100%;
+                }
+            }
+            h2{
+                font-size: .36rem;
+                font-weight: bold;
+                color: #005DE9;
+                text-align: center;
+                margin-right: 1rem;
+            }
+            p{
+                font-size: .28rem;
+                font-weight: 400;
+                color: #707070;
+                cursor: pointer;
+            }
+        }
+        .read-aloud-list{
+            background: #FFFFFF;
+            margin-top: .2rem;
+            width: 100%;
+            height: auto;
+            min-height: 14rem;
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin-left: .66rem;
+                margin-right: .66rem;
+                width: 95%;
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: .42rem;
+                    border-bottom: .01rem solid #DFDFDF;
+                    align-items:flex-start;
+                     justify-content: space-between;
+                    .read-aloud-left{
+                        display: flex;
+                        span{
+                            background: #FFA710;
+                            width: .58rem;
+                            height: .58rem;
+                            border-radius: 50%;
+                            text-align: center;
+                            font-size: .28rem;
+                            color: #fff;
+                            line-height: .58rem;
+                            font-weight: 400;
+                        }
+                    }
+                    .read-aloud-center{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: .54rem;
+                        padding-bottom: .54rem;
+                         flex-grow: 1;
+                        .read-aloud-name{
+                            height: .42rem;
+                            font-size: .32rem;
+                            font-weight: bold;
+                            color: #707070;
+                            line-height: .42rem;
+                        }
+                        .read-aloud-no{
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: .28rem;
+                            margin-bottom: .32rem;
+                           
+                            .read-aloud-date{
+                                height: .4rem;
+                                font-size: .28rem;
+                                font-weight: 400;
+                                color: #707070;
+                                text-align: center;
+                                line-height: .4rem;
+                            }
+                            .read-aloud-num{
+                                height: .4rem;
+                                font-size: .24rem;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                                background: #AFAFAF;
+                                line-height: .4rem;
+                                border-radius: .18rem;
+                                margin-left: .2rem;
+                                margin-right: .2rem;
+                                padding-left: .2rem;
+                                padding-right: .2rem;
+                            }
+                            .read-aloud-tag{
+                                height: .4rem;
+                                background: #2BA1C9;
+                                border-radius:.18rem;
+                                font-size: .24rem;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                                padding-left: .2rem;
+                                padding-right: .2rem;
+                                line-height: .4rem;
+                            }
+                        }
+                        .read-aloud-detail{
+                            max-width: 15rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                             height: .4rem;
+                             line-height: .4rem;
+                              font-size: .26rem;
+                              color: #707070;
+                        }
+                    }
+                    .read-aloud-right{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                       height: 2rem;
+                       line-height: 2rem;
+                        .select-img{
+                            width: .36rem;
+                            height: .48rem;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width:100%;
+                                height: 100%;
+                            }
+                        }
+                        .tag-img{
+                            margin-right: .6rem;
+                            margin-left: .6rem;
+                            width: .34rem;
+                            height: .47rem;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width:100%;
+                                height: 100%;
+                            }
+                        }
+                        .start-img{
+                            width: .46rem;
+                            height: .46rem;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width:100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                li:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
