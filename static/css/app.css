@@ -3364,3 +3364,33 @@ pre {
 	text-align: center;
 	margin: 10px auto
 }
+.page{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: .5rem auto;
+}
+.page a{
+	height: .68rem;
+	background: #FFFFFF;
+	border-radius: .08rem;
+	border: .02rem solid #DFDFDF;
+	color:#AFAFAF;
+	padding: 0 .56rem;
+	font-size: .28rem;
+	line-height: .68rem;
+}
+.page select{
+	margin: 0  0 0 .58rem;
+	height: .44rem;
+}
+.page span{
+	color:#AFAFAF;
+	font-size: .28rem;
+	margin-right: .58rem;
+}
+.page a:hover{
+	border: .02rem solid #2BA1C9;
+	color:#2BA1C9;
+}

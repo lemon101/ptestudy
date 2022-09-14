@@ -34,6 +34,110 @@ body{
                 cursor: pointer;
             }
         }
+        .read-aloud-search{
+            background: #fff;
+            width: 100%;
+            min-height: 4.68rem;
+            .read-aloud-search-title{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: .72rem;
+                margin-right: .72rem;
+                flex-wrap: wrap;
+                .search-block{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-top: .2rem;
+                    margin-right: 3rem;
+                    .search-block-title{
+                        color:#AFAFAF;
+                    }
+                    .search-type{
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: .14rem;
+                        img{
+                            width: .34rem;
+                            height: .47rem;
+                            margin-right: .3rem;
+                        }
+                        .search-radio{
+                            position: relative;
+                            display: inline-block;
+                            margin-right: .3rem;
+                            
+                            input{
+                                 vertical-align: middle;
+                                margin-top: -2px;
+                                margin-bottom: 1px;
+                                /* 前面三行代码是为了让radio单选按钮与文字对齐 */
+                                width: .4rem;
+                                height: .4rem;
+                                appearance: none;/*清楚默认样式*/
+                                -webkit-appearance: none;
+                                opacity: 0;
+                                outline: none;
+                            }
+                            label {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                z-index: 1;
+                                width: .4rem;
+                                height: .4rem;
+                                border: .02rem solid #2A7A95;
+                                border-radius: 100%;
+                            }
+                            input:checked+label {
+                                background: #2A7A95;
+                            }
+                            input:checked+label::after {
+                                content: "";
+                                position: absolute;
+                                left: 0.13rem;
+                                top: 0.06rem;
+                                width: 0.08rem;
+                                height: 0.17rem;
+                                border-right: .02rem solid #fff;
+                                border-bottom: .02rem solid #fff;
+                                transform: rotate(45deg);
+                            }
+                            span{
+                                color:#707070;
+                                font-size: .28rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .search-button{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-right: 2rem;
+                margin-top: 1.6rem;
+                margin-bottom: 0.4rem;
+                button{
+                     background-color: #FFFFFF; /* Green */
+                      border: .02rem solid #DFDFDF;
+                      border-radius: .08rem;
+                      color: #707070;
+                      padding: .16rem .56rem;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: .28rem;
+                      margin-left: .32rem;
+                      cursor: pointer;
+                }
+               button:hover{
+                    color: #2BA1C9;
+                    border:.02rem solid #2BA1C9;
+                }
+            }
+        }
         .read-aloud-list{
             background: #FFFFFF;
             margin-top: .2rem;
@@ -176,4 +280,13 @@ body{
             }
         }
     }
+    .blue{
+        color: #2BA1C9;
+    }
+    .br-blue{
+        border:.02rem solid #2BA1C9;
+    }
+    
+    
+    
 }

@@ -27,7 +27,84 @@
 						<div class="read-aloud-title">
 							<div class="read-aloud-img"><img src="../img/home/speaking.png" /></div>
 							<h2>Read aloud</h2>
-							<p>高级筛选<i class="el-icon-caret-bottom"></i></p>
+							<p onclick="showSearch()">高级筛选<i class="el-icon-caret-bottom"></i></p>
+						</div>
+						<div class="read-aloud-search" id="search">
+							<div class="read-aloud-search-title">
+								<div class="search-block">
+									<lable class="search-block-title">题目类型</label>
+									<div class="search-type">
+										<div class="search-radio">
+											<input type="radio" id='one'  name="titleType"/>
+											<label for="one"></label>
+											<span>所有题目</span>
+										</div>
+										<div class="search-radio">
+											<input type="radio" id='two'  name="titleType"/>
+											<label for="two"></label>
+											<span>全真试题</span>
+										</div>
+										<div class="search-radio">
+											<input type="radio" id='three'  name="titleType"/>
+											<label for="three"></label>
+											<span>所有预测</span>
+										</div>
+									</div>
+								</div>
+								<div class="search-block">
+									<lable class="search-block-title">题目类型</label>
+									<div class="search-type">
+										<div class="search-radio">
+											<input type="radio" id='one'  name="titleType"/>
+											<label for="one"></label>
+											<span>所有题目</span>
+										</div>
+										<div class="search-radio">
+											<input type="radio" id='two'  name="titleType"/>
+											<label for="two"></label>
+											<span>全真试题</span>
+										</div>
+										<div class="search-radio">
+											<input type="radio" id='three'  name="titleType"/>
+											<label for="three"></label>
+											<span>所有预测</span>
+										</div>
+									</div>
+								</div>
+								<div class="search-block">
+									<lable class="search-block-title">题目类型</label>
+									<div class="search-type">
+										<div class="search-radio">
+											<input type="radio" id='one'  name="titleType"/>
+											<label for="one"></label>
+											<span>所有题目</span>
+										</div>
+										<div class="search-radio">
+											<input type="radio" id='two'  name="titleType"/>
+											<label for="two"></label>
+											<span>全真试题</span>
+										</div>
+										<div class="search-radio">
+											<input type="radio" id='three'  name="titleType"/>
+											<label for="three"></label>
+											<span>所有预测</span>
+										</div>
+									</div>
+								</div>
+								<div class="search-block">
+									<lable class="search-block-title">题目类型</label>
+									<div class="search-type">
+										<img src="../img/home/readaloud/tag-organge.png" />
+										<img src="../img/home/readaloud/tag-organge.png" />
+										<img src="../img/home/readaloud/tag-organge.png" />
+									</div>
+								</div>
+							</div>
+							<div class="search-button">
+								<button type="button">重置</button>
+								<button type="button" class="blue br-blue">确定</button>
+								<button type="button">导出列表</button>
+							</div>
 						</div>
 						<!--list-->
 						<div class="read-aloud-list">
@@ -185,6 +262,14 @@
 				con.style.display ='block'
 			}else{
 				console.log("隐藏")
+				con.style.display='none'
+			}
+		}
+		function showSearch(){
+			var con = document.getElementById('search');
+			if(con.style.display=='none'){
+				con.style.display ='block'
+			}else{
 				con.style.display='none'
 			}
 		}
