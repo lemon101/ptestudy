@@ -45,10 +45,10 @@
 										<button class="btn-grey"><i class="el-icon-view"></i><span>查看答案</span></button>
 									</div>
 									<div class="practice-read-right">
-										<button class="btn-grey"><i class="el-icon-star-on"></i><span>加入收藏</span></button>
-										<button class="btn-grey"><i class="el-icon-success"></i><span>确认考过</span></button>
-										<button class="btn-grey"><i class="el-icon-s-management"></i><span>标记备忘</span></button>
-										<button class="btn-grey"><i class="el-icon-edit"></i><span>反馈意见 </span></button>
+										<a class="btn-grey"><i class="el-icon-star-on"></i><span>加入收藏</span></a>
+										<a class="btn-grey"><i class="el-icon-success"></i><span>确认考过</span></a>
+										<a class="btn-grey"><i class="el-icon-s-management"></i><span>标记备忘</span></a>
+										<a class="btn-grey" href="#modal-feedback"><i class="el-icon-edit"></i><span>反馈意见 </span></a>
 									</div>
 								</div>
 								<div class="page">
@@ -85,12 +85,12 @@
 													<label class="time">2022-09-07 10:41:46</label>
 													<div class="blog-score">
 														<i class="el-icon-view"></i>
-														<span>查看评分</span>
+														<a href="#modal-one"><span>查看评分</span></a>
 													</div>
 												</div>
 												<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 												</audio>
 											</div>
@@ -109,8 +109,8 @@
 													</div>
 												</div>
 												<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 												</audio>
 											</div>
@@ -129,8 +129,8 @@
 													</div>
 												</div>
 												<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 												</audio>
 											</div>
@@ -149,8 +149,8 @@
 													</div>
 												</div>
 												<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 												</audio>
 											</div>
@@ -184,8 +184,8 @@
 												</div>
 											</div>
 											<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 											</audio>
 										</div>
@@ -200,8 +200,8 @@
 												</div>
 											</div>
 											<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 											</audio>
 										</div>
@@ -216,8 +216,8 @@
 												</div>
 											</div>
 											<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 											</audio>
 										</div>
@@ -232,8 +232,8 @@
 												</div>
 											</div>
 											<audio controls  class="audio">
-												  <source src="horse.ogg" type="audio/ogg">
-												  <source src="horse.mp3" type="audio/mpeg">
+												  <source src="../img/practice/test.mp3" type="audio/ogg">
+												  <source src="../img/practice/test.mp3" type="audio/mpeg">
 												You're browser does not support the audio element.
 											</audio>
 										</div>
@@ -245,6 +245,103 @@
 				</main>
 			</section>
 		</section>
+		
+		<!-- Modal 查看评分-->
+		<div class="modal" id="modal-one" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-header">
+		      <h2>Please check your score!</h2>
+		      <a href="#" class="btn-close" aria-hidden="true">×</a>
+		    </div>
+		    <div class="modal-body">
+		      <div class="modal-progress">
+		      	<div class="progress">
+		      		<div class="progress-containter">
+		      			<div class="g-progress"></div>
+		      			<div class="num-blue">4%</div>
+		      		</div>
+		      		<label>内容</label>
+		      	</div>
+		      	<div class="progress">
+		      		<div class="progress-containter">
+		      			<div class="g-progress g-progress-orange"></div>
+		      			<div class="num-orange">0/5</div>
+		      		</div>
+		      		<label>流利度</label>
+		      	</div>
+		      	<div class="progress">
+		      		<div class="progress-containter">
+		      			<div class="g-progress g-progress-bl"></div>
+		      			<div class="num-bl">0/5</div>
+		      		</div>
+		      		<label>发音</label>
+		      	</div>
+		      </div>
+		      <div class="modal-score">
+		      	<div class="modal-score-title">
+		      		<h3>发音情况</h3>
+		      		<a class="blue-bg">Good</a>
+		      		<a class="yellow-bg">Average </a>
+		      		<a class="red-bg">bad</a>
+		      		<a class="grey-bg">/Pause</a>
+		      	</div>
+		      	<div class="modal-score-result">
+		      		<p class="blue">
+		      			tesla's theoretical work formed the <i class="red">basis</i> of modern alternating <i class="yellow">current</i> electric power systems  <i class="grey">thomas</i> edison promised him almost one million dollars in today's money to undertake motor and generator improvement however when tesla the ethical serb asked about the money edison's reportedly reply was tesla you don't understand our american humor the pair became arch-rivals
+		      		</p>
+		      	</div>
+		      </div>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#" class="btn">返回</a>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- Modal 反馈意见-->
+		<div class="modal" id="modal-feedback" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-header">
+		      <h2>反馈意见</h2>
+		      <a href="#" class="btn-close" aria-hidden="true">×</a>
+		    </div>
+		    <div class="modal-body">
+		      <div class="modal-form">
+		      	<div class="modal-item">
+		      		<label class="modal-label">问题类型：</label>
+		      		<div class="modal-block">
+						<div class="modal-radio">
+							<input type="radio" id='one'  name="queType" class="radio-input"/>
+							<label for="one" class="radio-label"></label>
+							<span>题目有误</span>
+						</div>
+						<div class="modal-radio">
+							<input type="radio" id='two'  name="queType" class="radio-input"/>
+							<label for="two" class="radio-label"></label>
+							<span>打分有误</span>
+						</div>
+						<div class="modal-radio">
+							<input type="radio" id='three'  name="queType" class="radio-input"/>
+							<label for="three" class="radio-label"></label>
+							<span>其它</span>
+						</div>
+		      		</div>
+		      	</div>
+		      	<div class="modal-item">
+		      		<label class="modal-label">详情描述：</label>
+		      		<div class="modal-block">
+		      			<textarea rows="10" placeholder="请输入详细叙述" class="textarea-con"></textarea>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#" class="btn">取消</a>
+		      <a href="#" class="btn-blue blue-bg font-white border-none">提交</a>
+		    </div>
+		  </div>
+		</div>
+		
 	</body>
 	<script type="text/javascript" src="../js/isPC.js" ></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
