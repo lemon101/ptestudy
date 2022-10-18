@@ -3,26 +3,298 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../static/css/app.css">
 		<link rel="stylesheet" type="text/css" href="../css/el-icon.css" />
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/index.less">
 		<link rel="stylesheet" type="text/css" href="../static/css/element.css">
-		<!-- 必须先引入vue  后使用element-ui -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <!-- 引入element 的组件库-->
-        <script src="https://unpkg.com/element-ui@2.4.11/lib/index.js"></script>
+		<link rel="stylesheet" type="text/less" href="../css/index.less">
+		<!--<link rel="stylesheet" type="text/less" href="../js/swiper/swiper-bundle.min.css">
+		<script type="text/javascript" src="../js/swiper/swiper-bundle.min.js" ></script>-->
 		<title>达澳学院</title>
 	</head>
-
+<script> 
+	    !function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);
+	    flex(100, 1);
+	</script>
 	<body id="index">
 		<div class="index-container">
 			<header>
-				
+				<div class="logo">
+					<img src="../img/home/logo.png"  />
+					<span>达澳欢迎您</span>
+				</div>
+				<div class="center">
+					<div class="center-top">
+						<div class="form">
+							<div class="form-container">
+								<div class="center-form"> 
+									<img src="../img/index/tele.png"  />
+									<input type="text" placeholder="+61 - 420 532 858 " readonly="readonly">
+								</div>
+								<div class="center-form"> 
+									<img src="../img/index/email.png"  class="email"/>
+									<input type="text" placeholder="service@ptestudy.com" readonly="readonly">
+								</div>
+							</div>
+							<div class="form-right">
+								<img src="../img/index/sina.png"  class="email"/>
+								<img src="../img/index/xiaohongshu.png"  class="email"/>
+								<img src="../img/index/facebook.jpg"  class="email"/>
+								<img src="../img/index/email.png"  class="email"/>
+								<img src="../img/index/email.png"  class="email"/>
+							</div>
+						</div>
+					</div>
+					<div class="center-menu">
+						<ul>
+							<li class="is-selected">首页</li>
+							<li>课程安排</li>
+							<li>练习平台</li>
+							<li>达澳课堂</li>
+							<li>PTE资料</li>
+							<li>关于达澳</li>
+							<li>练习我们</li>
+						</ul>
+					</div>
+				</div>
 			</header>
+			<div class="index-banner">
+				<div class="banner-content">
+					
+					<div class="banner-title"><i>[</i><span class="pte-name">PTE学习室</span><i>]</i></div>
+					<div class="banner-sub-title">最新真题演练</div>
+					<hr class="banner-hr"/>
+					<div class="banner-pearson">
+						<img src="../img/index/pearson.png" />
+						<div class="banner-button">
+							<a class="button-blue">开始练题</a>
+							<a class="button-white">现在咨询</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-detail">
+				<div class="banner-content">
+					<div class="banner-title"><i>[</i><span class="pte-name">快速通过PTE, 让学习事半功倍</span><i>]</i></div>
+					<div class="banner-sub-title">PTEstudy.com是达澳学院旗下的PTE学习平台，网站题库实时更新，每周一高频机经免费领取。在中国和澳洲，我们直营校区覆盖了悉尼、墨尔本、布里斯班、珀斯、阿德莱德、霍巴特、长春、沈阳、珠海、西安等城市，各个校区老师定期参加培生官方培训，第一时间将考情带给各个校区的学生，课后真题机房老师尽责督导学生完成学习任务，实时答疑好评如潮。</div>
+					<img src="../img/index/ra.png" />
+				</div>
+			</div>
+			<div class="index-advantage">
+				<div class="banner-content">
+					<div class="banner-title"><i>[</i><span class="pte-name">PTE优势</span><i>]</i></div>
+					<div class="advantage">
+						<div class="advantage-block">
+							<img class="block-img"  src="../img/index/user.png"/>
+							<span class="block-title">全球广泛认可</span>
+							<div class="star">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+							</div>
+							<p class="block-detail"> 美国4000所大学，澳洲100%大学，英国2000所大学，其他地区10000所大学都接受PTE。</p>
+						</div>
+						<div class="advantage-block">
+							<img class="block-img" src="../img/index/v.png"/>
+							<span class="block-title">易报名，考点多</span>
+							<div class="star">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+							</div>
+							<p class="block-detail"> 不同于雅思或者托福的固定考试时间，PTE学术英语考试全年的大部分时间内都可以线上预约考试。澳大利亚有54个考点，中国有30个考点。</p>
+						</div>
+						<div class="advantage-block">
+							<img class="block-img"  src="../img/index/arrow.png"/>
+							<span class="block-title">出成绩快，容易突破</span>
+							<div class="star">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+								<img src="../img/index/star.png">
+							</div>
+							<p class="block-detail">  PTE 的考场次数更多，评分规则更适合中国学生，提分更高效。总之，更好刷分！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-add">
+				<div class="add-content">
+					<div class="add-title"><span class="add-span">加入<i>230292+</i>  学生</span></div>
+					<p class="add-detail">
+						Class.PTEStudy.Com 是达澳学院旗下的PTE学习平台，网站题库实时更新，每周一高频机经免费领取。在中国和澳洲，我们直营校区覆盖了悉尼、墨尔本、布里斯班、珀斯、阿德莱德、霍巴特、长春、沈阳、珠海、西安等城市，各个校区老师定期参加培生官方培训，第一时间将考情带给各个校区的学生，课后真题机房老师尽责督导学生完成学习任务，实时答疑好评如潮。
+					</p>
+					<div class="add-bg">
+						<a class="button-blue">现在加入</a>
+					</div>
+				</div>
+			</div>
+			<div class="index-share">
+				<div class="banner-content">
+					<div class="banner-title"><i>[</i><span class="pte-name">最新分享</span><i>]</i></div>
+					<div class="share-box">
+						<div class="share-block">
+							<div class="share-img">
+								<img src="../img/index/pic1.png" />
+								<div class="share-date">11/10</div>
+							</div>
+							<label class="share-title">满分女孩经验分享，其实你和PTE满分只差一个字</label>
+							<p class="share-p">
+								第一次来大澳的时候就决定跟lily老师上一对一 因为觉得自己跟八炸很接近了。在一开始上课的时候 lily老师帮我找出了我最大问题的RA，SWT和FIB 并且
+							</p>
+							<div class="share-hr" ></div>
+							<div class="share-tag">
+								<span class="share-post">Posted in:<i class="blue">ShuiErrr</i></span>
+								<span class="share-tags">Tags <i  class="blue">PTE, </i><i  class="blue">分享</i></span>
+							</div>
+						</div>
+						<div class="share-block">
+							<div class="share-img">
+								<img src="../img/index/pic2.png" />
+								<div class="share-date">11/10</div>
+							</div>
+							<label class="share-title">满分女孩经验分享，其实你和PTE满分只差一个字</label>
+							<p class="share-p">
+								第一次来大澳的时候就决定跟lily老师上一对一 因为觉得自己跟八炸很接近了。在一开始上课的时候 lily老师帮我找出了我最大问题的RA，SWT和FIB 并且
+							</p>
+							<div class="share-hr" ></div>
+							<div class="share-tag">
+								<span class="share-post">Posted in:<i class="blue">ShuiErrr</i></span>
+								<span class="share-tags">Tags <i  class="blue">PTE, </i><i  class="blue">分享</i></span>
+							</div>
+						</div>
+						<div class="share-block">
+							<div class="share-img">
+								<img src="../img/index/pic3.png" />
+								<div class="share-date">11/10</div>
+							</div>
+							<label class="share-title">满分女孩经验分享，其实你和PTE满分只差一个字</label>
+							<p class="share-p">
+								第一次来大澳的时候就决定跟lily老师上一对一 因为觉得自己跟八炸很接近了。在一开始上课的时候 lily老师帮我找出了我最大问题的RA，SWT和FIB 并且
+							</p>
+							<div class="share-hr" ></div>
+							<div class="share-tag">
+								<span class="share-post">Posted in:<i class="blue">ShuiErrr</i></span>
+								<span class="share-tags">Tags <i  class="blue">PTE, </i><i  class="blue">分享</i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-team">
+				<div class="banner-content">
+					<div class="banner-title"><i>[</i><span class="pte-name">名师队伍</span><i>]</i></div>
+				</div>
+				<div class="index-swiper">
+					<!--<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide" style="background-image:url(../img/index/pic1.png)"></div>
+					      <div class="swiper-slide" style="background-image:url(../img/index/pic2.png)"></div>
+					      <div class="swiper-slide" style="background-image:url(../img/index/pic3.png)"></div>
+					      <div class="swiper-slide" style="background-image:url(../img/index/pic1.png)"></div>
+					      <div class="swiper-slide" style="background-image:url(../img/index/pic2.png)"></div>
+					    </div>
+					    <div class="swiper-pagination"></div>
+					  </div>
+				</div>-->
+			</div>
+			<div class="index-detail-swiper">
+				<div class="detail-bg">
+					<img src="../img/index/server.png" />
+				</div>
+				<div class="index-detail-container">
+					<div class="swiper">
+						<p><i>PTEStudy.com </i>是达澳学院旗下的PTE学习平台，坚持稳健布局、持续创新、开放合作，在学习资料、Web学习平台、手机app和微信小程序等平台为平台老师、考生有竞争力的方案、产品和服务，并致力于更专业的英语学习信息平台。</p>
+						<img src="../img/home/logo.png"  />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="index-class">
+			<div class="banner-content">
+				<div class="banner-title"><i>[</i><span class="pte-name">课堂风采</span><i>]</i></div>
+			</div>
+			<div class="index-class-swiper">
+				<img src="../img/index/server.png" />
+			</div>
+		</div>
+		<div class="index-aboutus">
+			<div class="banner-content">
+				<div class="banner-title"><i>[</i><span class="pte-name">联系我们 / 成绩评估</span><i>]</i></div>
+				<div class="banner-sub-title">请填写以下表格，我们的专业名师将会详细评估您当前PTE水平为您<i> 私人定制 </i> 培训方案</div>
+			</div>
+			<div class="index-about">
+				<div class="index-about-form">
+					<div class="form-item">
+						<input type="text" placeholder="您的姓名" />
+						<input type="text" placeholder="您的姓名" />
+						<input type="text" placeholder="您的姓名" />
+					</div>
+					<label class="form-label">最近一次PTE考试</label>
+					<div class="form-item">
+						<input type="number" placeholder="总分" />
+						<div class="form-item-sub">
+							<input type="number" placeholder="听力得分" />
+							<input type="number" placeholder="阅读得分" />
+						</div>
+						<div class="form-item-sub">
+							<input type="number" placeholder="口语得分" />
+							<input type="number" placeholder="写作得分" />
+						</div>
+					</div>
+					<label class="form-label">您期望的PTE分数</label>
+					<div class="form-item">
+						<input type="number" placeholder="期望的分数" />
+						<div class="form-item-sub">
+							<input type="number" placeholder="听力得分" />
+							<input type="number" placeholder="阅读得分" />
+						</div>
+						<div class="form-item-sub">
+							<input type="number" placeholder="口语得分" />
+							<input type="number" placeholder="写作得分" />
+						</div>
+					</div>
+						<div class="form-item">
+							<a class="button-blue">现在加入</a>
+						</div>
+				</div>
+			</div>
+			<div class="index-information">
+				<div class="index-address">
+					
+					<p><img src="../img/index/email.png"  class="email"/>  info@ptestudy.com.au  </p>
+					<p><img src="../img/index/tele.png" class="tel"/>+61 420 532 858 3/443 </p>
+					<p><img src="../img/index/address.png" class="address"/>Albany Hwy, Victoria Park, WA 6100</p>
+				</div>
+				<div class="index-map">
+					<img src="../img/index/map.jpg"  />
+				</div>
+			</div>
 		</div>
 	</body>
-<script>
+<script type="text/javascript" src="../js/isPC.js" ></script>
 
-</script>
+<!--<script type="text/javascript">
+	 var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+</script>-->
 </html>
